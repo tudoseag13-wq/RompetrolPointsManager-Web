@@ -1,0 +1,9 @@
+{
+  "name": "Rompetrol Points Manager",
+  "short_name": "Rompetrol",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a0e27",
+  "icons": []
+}

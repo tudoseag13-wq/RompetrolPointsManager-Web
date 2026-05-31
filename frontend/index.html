@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rompetrol Points Manager</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#0a0e27">
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <h1>Rompetrol Points</h1>
+      <div class="header-stats">
+        <div class="stat">
+          <span class="stat-label">Total Points</span>
+          <span class="stat-value" id="totalPoints">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Total Lei</span>
+          <span class="stat-value" id="totalMoney">0.00</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div id="accountsList" class="accounts-list"></div>
+    </main>
+
+    <button id="addBtn" class="add-btn">+ Add Account</button>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Add Account</h2>
+        <form id="form">
+          <input type="text" id="nickname" placeholder="Nickname" required>
+          <input type="tel" id="phone" placeholder="Phone Number" required>
+          <input type="password" id="password" placeholder="Password" required>
+          <button type="submit">Add</button>
+        </form>
+        <button id="closeBtn" class="close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
